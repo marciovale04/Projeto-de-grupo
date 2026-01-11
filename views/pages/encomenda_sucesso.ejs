@@ -1,0 +1,25 @@
+<%- include('../partials/header', { titulo: 'Encomenda' }) %>
+
+<main class="container mt-5">
+  <h1>Encomenda realizada com sucesso!</h1>
+
+  <p><strong>Cor:</strong> <%= cor %></p>
+  <p><strong>Madeira:</strong> <%= madeira %></p>
+  <p><strong>Pickups:</strong> <%= pickups %></p>
+
+  <% if (extras) { %>
+    <p><strong>Extras:</strong>
+      <% if (Array.isArray(extras)) { %>
+        <%= extras.join(", ") %>
+      <% } else { %>
+        <%= extras %>
+      <% } %>
+    </p>
+  <% } %>
+
+  <a href="/guitarras" class="btn btn-primary mt-3">
+    Voltar às guitarras
+  </a>
+</main>
+
+<%- include('../partials/footer') %>

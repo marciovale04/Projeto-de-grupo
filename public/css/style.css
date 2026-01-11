@@ -1,0 +1,87 @@
+.logo-guitarlab {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.logo-guitarlab span {
+  color: #0d6efd;
+  /* azul Bootstrap */
+}
+
+/* Fonte rock também no menu */
+.navbar-nav .nav-link {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2, 3rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd;
+}
+
+/* Hero section */
+.hero-section {
+  position: relative;
+  margin-top: 40px;
+  /* altura da navbar */
+}
+
+/* Imagem do carousel */
+.hero-img {
+  height: 70vh;
+  object-fit: cover;
+}
+
+/* Overlay escuro */
+.carousel-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+/* Texto por cima */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* Ajustar altura das imagens dos cards */
+.card-img-top {
+  height: 250px;
+  object-fit: contain;
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: contain;
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}

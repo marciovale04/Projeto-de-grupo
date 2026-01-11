@@ -1,0 +1,48 @@
+<%- include('../partials/header') %>
+
+  <section class="hero-section">
+
+    <div id="heroCarousel" class="carousel slide" 
+     data-bs-ride="carousel" 
+     data-bs-interval="6000">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="carousel-overlay"></div>
+          <img src="/images/carrosel1.jpg" class="d-block w-100 hero-img">
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-overlay"></div>
+          <img src="/images/carrosel2.jpg" class="d-block w-100 hero-img">
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-overlay"></div>
+          <img src="/images/carrosel3.jpg" class="d-block w-100 hero-img">
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-overlay"></div>
+          <img src="/images/carrosel4.jpg" class="d-block w-100 hero-img">
+        </div>
+      </div>
+    </div>
+
+    <!-- TEXTO -->
+    <div class="hero-content text-center text-white">
+      <h1 class="display-5 fw-bold">Bem-vindo à GuitarLab</h1>
+      <p class="lead">
+        Compra e personaliza guitarras de forma simples e intuitiva.
+      </p>
+
+      <div class="mt-4">
+        <a href="/guitarras" class="btn btn-primary btn-lg me-3">Ver Guitarras</a>
+        <a href="/encomendas" class="btn btn-success btn-lg">Ver Encomendas</a>
+      </div>
+    </div>
+
+  </section>
+
+  <%- include('../partials/footer') %>

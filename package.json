@@ -1,0 +1,13 @@
+{
+  "name": "projeto-de-grupo",
+  "version": "1.0.0",
+  "description": "app-de-venda-e-personalizacao-de-guitarras",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "marciovale-ivopaiva",
+  "license": "ISC",
+  "type": "commonjs"
+}

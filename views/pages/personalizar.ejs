@@ -1,0 +1,49 @@
+<%- include('../partials/header', { titulo: 'Personalizar Guitarra' }) %>
+
+<main class="container mt-5">
+  <h1>Personalizar <%= guitarra.nome %></h1>
+
+  <form action="/encomendas/sucesso" method="GET">
+
+    <input type="hidden" name="id_guitarra" value="<%= guitarra.id_guitarra %>">
+
+    <div class="mb-3">
+      <label class="form-label">Cor</label>
+      <select name="cor" class="form-select">
+        <option>Preto</option>
+        <option>Branco</option>
+        <option>Sunburst</option>
+        <option>Azul</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Madeira do Corpo</label>
+      <select name="madeira" class="form-select">
+        <option>Alder</option>
+        <option>Mahogany</option>
+        <option>Ash</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Pickups</label>
+      <select name="pickups" class="form-select">
+        <option>Single Coil</option>
+        <option>Humbucker</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Extras</label><br>
+      <input type="checkbox" name="extras" value="Hard Case"> Hard Case (+50€)<br>
+      <input type="checkbox" name="extras" value="Locking Tuners"> Locking Tuners (+80€)
+    </div>
+
+    <button class="btn btn-success">
+      Encomendar Guitarra Personalizada
+    </button>
+  </form>
+</main>
+
+<%- include('../partials/footer') %>
